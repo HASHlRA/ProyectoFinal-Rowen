@@ -25,4 +25,12 @@ public class RL_PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(0, playerDirection.y * playerSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Banana"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
