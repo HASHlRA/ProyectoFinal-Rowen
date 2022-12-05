@@ -11,16 +11,12 @@ public class RL_SpawnObstacle : MonoBehaviour
     public float minY;
     public float timeBetweenSpawn;
     private float spawnTime;
-
-    // Update is called once per frame
-    void Update()
+    
+    void Start()
     {
-        if(Time.time > spawnTime)
-        {
-            Spawn();
-            spawnTime = Time.time + timeBetweenSpawn;
-        }
+        InvokeRepeating("Spawn", timeBetweenSpawn, timeBetweenSpawn);
     }
+    
 
     void Spawn()
     {
