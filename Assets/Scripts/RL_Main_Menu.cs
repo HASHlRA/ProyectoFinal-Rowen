@@ -8,6 +8,7 @@ public class RL_Main_Menu : MonoBehaviour
 {
     public void StartButton()
     {
+        // The start button will lead to the game
         SceneManager.LoadScene("RL_Main_Scene");
     }
 }

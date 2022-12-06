@@ -8,6 +8,7 @@ public class RL_banana : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // if the player touches the banana the score will be +1
         if (other.gameObject.CompareTag("Player"))
         {
             RL_AddScore.instance.ChangeScore(bananavalue);

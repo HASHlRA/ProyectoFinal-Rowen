@@ -13,6 +13,7 @@ public class RL_Score : MonoBehaviour
 
     void Start()
     {
+        // displays the highscore
         highScore.text = $"High Score: {PlayerPrefs.GetInt("HighScore",0).ToString()}";
     }
 
@@ -20,6 +21,7 @@ public class RL_Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Adds +1 score every second passes and if the score beats the last score it will be updated in the highscore
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             score += 1 * Time.deltaTime;

@@ -20,6 +20,7 @@ public class RL_AddScore : MonoBehaviour
 
     public void ChangeScore(int bananavalue)
     {
+        // adds the score when the player touches a banana and displays it
         score += bananavalue;
         text.text = score.ToString();
     }

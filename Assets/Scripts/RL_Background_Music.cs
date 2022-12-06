@@ -9,6 +9,7 @@ public class RL_Background_Music : MonoBehaviour
 
     void Awake()
     {
+        // sets the background music
         if(backgroundMusic == null)
         {
             backgroundMusic = this;

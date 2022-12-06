@@ -8,11 +8,13 @@ public class RL_Game_Over : MonoBehaviour
 {
     public void RestartButton()
     {
+        // the restart button will lead to the game again
         SceneManager.LoadScene("RL_Main_Scene");
     }
 
     public void ExitButton()
     {
+        // the exit button will lead to the main menu
         SceneManager.LoadScene("RL_Main_Menu");
     }
 }
